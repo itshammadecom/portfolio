@@ -1,0 +1,839 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hammad Sohail | Shopify Stores, Logos, Banners and Marketing</title>
+<meta name="description" content="Jahan Digital Group builds and manages online stores, designs logos and banners, and runs Meta and TikTok marketing.">
+<meta name="theme-color" content="#0a0705">
+<link rel="icon" href="jahan%20logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bodoni+Moda:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#0a0705;
+  --espresso:#170e09;
+  --walnut:#26170e;
+  --brown:#4a2c17;
+  --bronze:#8b5a2f;
+  --copper:#c48a55;
+  --sand:#e6cfb3;
+  --ivory:#f6ede2;
+
+  --w1:#ffffff;
+  --w2:#f2c94c;
+  --w3:#c9962e;
+
+  --serif:'Bodoni Moda','Didot','Bodoni MT','Times New Roman',serif;
+  --sans:'Jost','Segoe UI',system-ui,-apple-system,sans-serif;
+  --ruqaa:'Aref Ruqaa','Noto Naskh Arabic','Traditional Arabic',serif;
+
+  --edge:clamp(80px,11vw,150px);
+  --braid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='16' viewBox='0 0 60 16'%3E%3Cpath d='M0 8 Q15 -2 30 8 T60 8' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3Cpath d='M0 8 Q15 18 30 8 T60 8' fill='none' stroke='%23f2c94c' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--black);color:var(--ivory);
+  font:400 1.0625rem/1.7 var(--sans);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body.lock{overflow:hidden}
+img{max-width:100%}
+a{color:inherit}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--w2);outline-offset:3px}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto;position:relative;z-index:1}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@keyframes drift{to{transform:translateX(-50%)}}
+@keyframes braid{to{background-position-x:60px}}
+@keyframes braidsm{to{background-position-x:30px}}
+
+.braid{height:16px;background:var(--braid) repeat-x 0 0;animation:braid 3.2s linear infinite}
+.braid.sm{height:8px;background-size:30px 8px;animation-name:braidsm}
+.braid.rev{animation-direction:reverse}
+
+.wave-edge{position:absolute;left:0;right:0;bottom:-1px;height:var(--edge);overflow:hidden;pointer-events:none;z-index:2}
+.wave-edge .drift{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:drift 30s linear infinite;will-change:transform}
+
+.wave-lines{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.wave-lines .drift{position:absolute;left:0;width:200%;height:160px;animation:drift 50s linear infinite;will-change:transform}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:12px 26px;border-radius:999px;border:1px solid var(--copper);
+  font:500 1rem/1 var(--sans);text-decoration:none;cursor:pointer;
+  color:var(--sand);background:transparent;
+  transition:background .25s,color .25s,border-color .25s;
+}
+.btn:hover{background:rgba(196,138,85,.16);border-color:var(--sand)}
+.btn.primary{background:linear-gradient(135deg,#e0a86f,#a86a36);color:#1a0f08;border-color:transparent}
+.btn.primary:hover{background:linear-gradient(135deg,#f0bb84,#b97a42);color:#1a0f08}
+.btn svg{width:18px;height:18px;flex:none}
+
+.announce{position:relative;border-bottom:1px solid rgba(196,138,85,.35);background:linear-gradient(90deg,var(--espresso),var(--walnut) 50%,var(--espresso))}
+.announce-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;padding:8px 0 10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:600 1.15rem/1.1 var(--serif);white-space:nowrap}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1px solid var(--copper);background:var(--black)}
+.announce-msg{flex:1;margin:0;text-align:center;font-size:.95rem;color:var(--sand)}
+.announce-cta{font-size:.95rem;font-weight:500;color:var(--sand);text-decoration:none;border-bottom:1px solid var(--copper);padding-bottom:1px;white-space:nowrap}
+.announce-cta:hover{color:var(--ivory)}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(10,7,5,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(196,138,85,.28)}
+.nav-in{display:flex;align-items:center;justify-content:center;height:58px}
+.nav-links{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+.nav-links a{display:block;padding:8px 18px;border-radius:999px;text-decoration:none;color:var(--sand);font-weight:500;transition:background .25s,color .25s}
+.nav-links a:hover{background:rgba(196,138,85,.16)}
+.nav-links a[aria-current="true"]{background:linear-gradient(135deg,#e0a86f,#a86a36);color:#1a0f08}
+.nav-toggle{display:none}
+.nav-title{display:none}
+
+.sec{position:relative;padding:clamp(64px,9vw,110px) 0;border-top:1px solid rgba(196,138,85,.18)}
+section[id],footer[id]{scroll-margin-top:64px}
+.sec-head{max-width:640px;margin-bottom:clamp(32px,5vw,52px)}
+.sec-head h2,.foot h2{font:600 clamp(2rem,4.4vw,3.2rem)/1.08 var(--serif);margin:0;letter-spacing:-.005em}
+.sec-head .braid{width:160px;margin:16px 0 18px}
+.rule{width:160px;height:1px;margin:16px 0 18px;background:linear-gradient(90deg,var(--copper),transparent)}
+.sec-head p{margin:0;color:var(--sand);font-size:1.1rem}
+.more{margin-top:40px}
+
+.s-logos{background:var(--espresso)}
+.s-banners{background:var(--black)}
+.s-stores{background:var(--walnut);padding-top:calc(var(--edge) + clamp(24px,4vw,56px));padding-bottom:calc(var(--edge) + clamp(40px,6vw,80px));border-top:0}
+.wave-edge.top{top:-1px;bottom:auto;transform:rotate(180deg)}
+.s-about{background:var(--black)}
+
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero{
+  --edge:clamp(120px,16vw,220px);
+  padding-top:clamp(48px,7vw,96px);
+  padding-bottom:calc(var(--edge) + clamp(40px,6vw,72px));
+  border-top:0;
+  background:
+    radial-gradient(55% 55% at 76% 36%,rgba(139,90,47,.42),transparent 70%),
+    radial-gradient(40% 40% at 6% 72%,rgba(74,44,23,.55),transparent 70%),
+    var(--black);
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font:600 clamp(2.8rem,7.2vw,5.8rem)/1.02 var(--serif);letter-spacing:-.012em;margin:0 0 24px}
+.lead{font-size:clamp(1.08rem,1.7vw,1.3rem);color:var(--sand);max-width:32em;margin:0 0 34px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.hero-copy>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-copy>:nth-child(2){animation-delay:.12s}
+.hero-copy>:nth-child(3){animation-delay:.24s}
+
+.hero .wave-lines{-webkit-mask-image:linear-gradient(90deg,#000 0,#000 40%,transparent 60%);mask-image:linear-gradient(90deg,#000 0,#000 40%,transparent 60%)}
+.arabic{
+  position:absolute;right:-1%;top:4%;z-index:0;pointer-events:none;user-select:none;
+  font:400 clamp(14rem,34vw,32rem)/1 var(--ruqaa);color:rgba(196,138,85,.07);
+}
+
+/* ---------- Perfect Swinging Hanging ID Card ---------- */
+@keyframes swingCard {
+  0% { transform: rotate(4deg); }
+  50% { transform: rotate(-4deg); }
+  100% { transform: rotate(4deg); }
+}
+
+.hang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  transform-origin: top center;
+  animation: swingCard 5s ease-in-out infinite;
+}
+
+.tag-wrap {
+  position: relative;
+}
+.tag {
+  background: #ffffff;
+  width: 290px;
+  padding: 14px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  position: relative;
+  text-align: center;
+  border: 1px solid rgba(196,138,85,0.4);
+}
+.hole {
+  width: 12px;
+  height: 12px;
+  background: #e0e0e0;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+.tag-photo img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.tag-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #111;
+  margin: 12px 0 2px 0;
+  font-family: var(--sans);
+}
+.tag-role {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+  font-family: var(--sans);
+}
+.barcode {
+  display: block;
+  height: 30px;
+  width: 85%;
+  margin: 0 auto 4px auto;
+  background: repeating-linear-gradient(
+    90deg,
+    #111,
+    #111 2px,
+    #fff 2px,
+    #fff 4px
+  );
+}
+.sticker {
+  position: absolute;
+  right: -15px;
+  top: 95px;
+  background: #d97736;
+  color: #fff;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 6px;
+  transform: rotate(6deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  white-space: nowrap;
+}
+
+.grid{display:grid;gap:26px}
+.logos-grid{grid-template-columns:repeat(4,1fr)}
+.banners-grid{grid-template-columns:repeat(2,1fr)}
+.item{margin:0}
+.item figcaption{margin-top:10px;font-size:.98rem;color:var(--sand)}
+.tile{
+  position:relative;display:block;width:100%;padding:0;margin:0;cursor:zoom-in;
+  background:var(--walnut);border:1px solid rgba(196,138,85,.42);border-radius:6px;overflow:hidden;color:var(--sand);
+}
+.tile img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.tile:hover img{transform:scale(1.035)}
+.logos-grid .tile{aspect-ratio:1}
+.banners-grid .tile{aspect-ratio:2/1}
+.logos-grid .tile img,.banners-grid .tile img{position:absolute;inset:0}
+.tile.missing{min-height:140px}
+.tile.missing img{display:none}
+.tile.missing::before{content:attr(data-file);position:absolute;inset:0;display:grid;place-items:center;padding:10px;text-align:center;font-size:.85rem;color:var(--sand)}
+.masonry{column-width:340px;column-gap:26px}
+.masonry .item{break-inside:avoid;margin:0 0 26px}
+.masonry .tile img{height:auto}
+
+.stores{list-style:none;margin:0;padding:0;border-top:0}
+.store{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:14px 26px;padding:26px 0 0}
+.store .braid{grid-column:1/-1;margin-top:22px}
+.store-mark{
+  width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;display:grid;place-items:center;
+  background:linear-gradient(135deg,#a86a36,var(--brown));color:var(--ivory);
+  font:600 1.4rem/1 var(--serif);border:1px solid var(--copper);
+}
+.store-mark img{width:100%;height:100%;object-fit:cover}
+.store-mark.missing img{display:none}
+.store h3{margin:0;font:600 clamp(1.4rem,2.6vw,1.9rem)/1.15 var(--serif)}
+.store .url{margin:2px 0 0;color:var(--sand);opacity:.85;font-size:.98rem;overflow-wrap:anywhere}
+.tag{padding:5px 14px;border:1px solid rgba(196,138,85,.5);border-radius:999px;font-size:.9rem;color:var(--sand);white-space:nowrap}
+
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,88px);align-items:start}
+.about-copy p{margin:0 0 1.2em;max-width:34em;font-size:1.14rem;line-height:1.85;color:var(--ivory)}
+.services{position:relative;padding:34px 30px 30px;background:linear-gradient(160deg,rgba(74,44,23,.55),rgba(23,14,9,.9));border:1px solid rgba(196,138,85,.35);border-radius:8px}
+.services h3{margin:0 0 18px;font:600 1.5rem/1.2 var(--serif)}
+.services h4{margin:20px 0 6px;font:600 1.02rem/1.3 var(--sans);color:var(--copper)}
+.services ul{margin:0;padding:0;list-style:none}
+.services li{padding:5px 0;color:var(--ivory)}
+
+.foot{position:relative;background:var(--espresso);padding:clamp(28px,5vw,56px) 0 0;overflow:hidden}
+.foot-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,6vw,80px);align-items:center;padding-bottom:56px}
+.foot .brand{margin-bottom:24px}
+.foot p{color:var(--sand);margin:14px 0 0;max-width:30em}
+.contact{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.contact a{
+  display:flex;align-items:center;gap:18px;padding:18px 22px;text-decoration:none;
+  border:1px solid rgba(196,138,85,.45);border-radius:8px;background:rgba(10,7,5,.55);
+  transition:border-color .25s,background .25s;
+}
+.contact a:hover{border-color:var(--w1);background:rgba(20,224,204,.06)}
+.contact svg{width:26px;height:26px;color:var(--copper);flex:none}
+.contact small{display:block;font-size:.9rem;color:var(--sand)}
+.contact span{font-size:1.15rem;font-weight:500;overflow-wrap:anywhere}
+.foot-base{position:relative;z-index:1;border-top:1px solid rgba(196,138,85,.3)}
+.foot-base p{margin:0;padding:18px 24px 22px;text-align:center;font-size:.92rem;max-width:none;color:var(--sand)}
+
+.panel{
+  position:fixed;inset:0;z-index:300;overflow-y:auto;background:var(--black);
+  transform:translateY(100%);transition:transform .7s cubic-bezier(.2,.8,.2,1);
+}
+.panel.open{transform:none}
+.panel-bar{position:sticky;top:0;z-index:5;background:rgba(10,7,5,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(196,138,85,.28)}
+.panel-bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.panel-head{position:relative;background:var(--walnut);padding:clamp(48px,7vw,84px) 0 clamp(40px,6vw,72px);border-bottom:1px solid rgba(196,138,85,.28)}
+.panel-head h2{font:600 clamp(2.2rem,5vw,3.6rem)/1.05 var(--serif);margin:0}
+.panel-head p{margin:0;color:var(--sand);font-size:1.1rem;max-width:36em}
+.panel-body{position:relative;padding:clamp(24px,4vw,48px) 0 clamp(56px,8vw,96px);background:transparent}
+
+.lb{position:fixed;inset:0;z-index:500;display:grid;place-items:center;padding:60px 76px 64px;background:rgba(6,4,3,.95)}
+.lb figure{margin:0;display:grid;gap:14px;justify-items:center;max-width:100%}
+.lb img{max-width:min(1100px,100%);max-height:calc(100vh - 190px);object-fit:contain;border:1px solid rgba(196,138,85,.5);background:var(--walnut)}
+.lb figcaption{color:var(--sand);font-size:1.02rem}
+.lb button{
+  position:absolute;width:48px;height:48px;border-radius:50%;cursor:pointer;
+  background:rgba(38,23,14,.9);color:var(--ivory);border:1px solid var(--copper);font:400 1.6rem/1 var(--sans);
+}
+.lb button:hover{border-color:var(--w1)}
+.lb-x{top:16px;right:16px}
+.lb-p{left:14px;top:50%;translate:0 -50%}
+.lb-n{right:14px;top:50%;translate:0 -50%}
+
+@media (max-width:1000px){
+  .logos-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-grid,.about-grid,.foot-grid{grid-template-columns:1fr}
+  .arabic{top:0;right:-6%}
+  .hero .wave-lines{-webkit-mask-image:linear-gradient(180deg,transparent 50%,#000 78%);mask-image:linear-gradient(180deg,transparent 50%,#000 78%)}
+}
+@media (max-width:860px){
+  .announce-msg{display:none}
+  .nav-in{justify-content:space-between}
+  .nav-toggle{
+    display:inline-flex;align-items:center;gap:8px;padding:9px 20px;border-radius:999px;cursor:pointer;
+    background:transparent;border:1px solid var(--copper);color:var(--sand);font:500 1rem/1 var(--sans);
+  }
+  .nav-title{display:block;font:600 1.1rem/1 var(--serif)}
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:2px;
+    background:var(--black);padding:12px 24px 22px;border-bottom:1px solid rgba(196,138,85,.28);
+  }
+  .nav.open .nav-links{display:flex}
+  .nav-links a{padding:12px 16px}
+}
+@media (max-width:640px){
+  .banners-grid{grid-template-columns:1fr}
+  .store{grid-template-columns:auto 1fr}
+  .store .tag{grid-column:2;justify-self:start}
+  .store .btn{grid-column:1/-1;justify-self:start}
+  .lb{padding:60px 16px 70px}
+  .lb-p,.lb-n{top:auto;bottom:12px;translate:none}
+  .lb-p{left:16px}.lb-n{right:16px}
+  .announce-cta{display:none}
+  .announce-in{justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+
+<body>
+
+<div class="announce">
+  <div class="wrap announce-in">
+    <a class="brand" href="#top">
+      <img src="jahan%20logo.jpeg" alt="Jahan Digital Group logo">
+      <span>Hammad</span>
+    </a>
+    <p class="announce-msg">Shopify Stores, Logos, Banners and Marketing for Online Businesses</p>
+    <a class="announce-cta" href="https://wa.me/923160827640" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <span class="nav-title"></span>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#logos">Logos</a></li>
+      <li><a href="#banners">Banners</a></li>
+      <li><a href="#stores">Stores</a></li>
+      <li><a href="#about">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="sec hero" id="top" aria-label="Introduction">
+  <div class="wave-lines" data-n="4"></div>
+  <div class="arabic" aria-hidden="true" lang="ar"></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Hammad</h1>
+      <p class="lead">I build and manage online stores, design the logos and banners they need, and run the Meta and TikTok marketing that brings buyers in.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#logos">See my work</a>
+        <a class="btn" href="https://wa.me/923160827640?text=Hello%20Jahan%20Digital%20Group%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          WhatsApp me
+        </a>
+      </div>
+    </div>
+
+    <!-- Swinging Hanging ID Card Component -->
+    <div class="hang" id="hang">
+      <span class="string"></span>
+      <div class="tag-wrap">
+        <div class="tag">
+          <span class="hole"></span>
+          <div class="tag-photo">
+            <img src="c:\Users\Hp\Desktop\hammad.jpeg" alt="Hafiz Hammad Sohail" data-label="Hammad" data-w="640" data-h="704">
+          </div>
+          <p class="tag-name">Hammad Sohail</p>
+          <p class="tag-role">E-Commerce/Web Designer</p>
+          <span class="barcode" aria-hidden="true"></span>
+        </div>
+        <span class="sticker">E-Commerce</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec s-logos" id="logos" aria-labelledby="logos-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="logos-h">Logos</h2>
+      <div class="rule" aria-hidden="true"></div>
+      <p>Brand marks I designed for online stores and businesses. Open the gallery to see every logo at full size.</p>
+    </div>
+    <div class="grid logos-grid" id="logoPreview"></div>
+    <div class="more">
+      <button class="btn primary" type="button" data-open="logos">Open the logo gallery (<span data-count="logos"></span> logos)</button>
+    </div>
+  </div>
+</section>
+
+<section class="sec s-banners" id="banners" aria-labelledby="banners-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="banners-h">Banners</h2>
+      <div class="rule" aria-hidden="true"></div>
+      <p>Homepage and campaign banners for online stores: sales, new collections and coming-soon pages.</p>
+    </div>
+    <div class="grid banners-grid" id="bannerPreview"></div>
+    <div class="more">
+      <button class="btn primary" type="button" data-open="banners">Open all banners (<span data-count="banners"></span>)</button>
+    </div>
+  </div>
+</section>
+
+<section class="sec s-stores" id="stores" aria-labelledby="stores-h">
+  <div class="wave-lines" data-n="7"></div>
+  <div class="wave-edge top" data-fill="var(--black)"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="stores-h">Stores I Have Built — Stay Tuned</h2>
+      <div class="braid sm" aria-hidden="true"></div>
+      <p>Live stores you can open right now. Each link opens in a new tab.</p>
+    </div>
+
+    <ul class="stores">
+      <li class="store">
+        <div class="store-mark" aria-hidden="true"></div>
+        <div><h3>E-Commerce Website</h3><p class="url"></p></div>
+        <a class="btn" href="https://2nns7j-fx.myshopify.com/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        <div class="braid sm" aria-hidden="true"></div>
+      </li>
+      <li class="store">
+        <div class="store-mark" aria-hidden="true"></div>
+        <div><h3>Restaurant Website</h3><p class="url"></p></div>
+        <a class="btn" href="https://novaflam.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        <div class="braid sm rev" aria-hidden="true"></div>
+      </li>
+      <li class="store">
+        <div class="store-mark" aria-hidden="true"></div>
+        <div><h3>Restaurant Website</h3><p class="url"></p></div>
+        <a class="btn" href="https://4brotherspizza.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        <div class="braid sm" aria-hidden="true"></div>
+      </li>
+      <li class="store">
+        <div class="store-mark"><img src= alt=""></div>
+        <div><h3>Marketing Website</h3><p class="url"></p></div>
+        <a class="btn" href="https://jahan.myecomstore.net" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        <div class="braid sm rev" aria-hidden="true"></div>
+      </li>
+      <li class="store">
+        <div class="store-mark" style="background#fff"><img src= alt="" style="object-fit:contain;padding:4px"></div>
+        <div><h3>E-Commerce Website</h3><p class="url"></p></div>
+        <a class="btn" href="https://arabicsouq.myecomstore.net" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        <div class="braid sm" aria-hidden="true"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="wave-edge" data-fill="var(--black)"></div>
+</section>
+
+<section class="sec s-about" id="about" aria-labelledby="about-h">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <div class="sec-head" style="margin-bottom:28px">
+        <h2 id="about-h">Hi, I'm Hammad</h2>
+        <div class="rule" aria-hidden="true"></div>
+      </div>
+      <p>Where I help businesses start selling online and keep their stores running well. My work covers the whole path from idea to a working shop: finding winning products, sourcing them, setting up and managing Shopify stores, and handling both local and international drop shipping.</p>
+      <p>Once a store is live, I drive traffic to it with Meta and TikTok marketing. I also design what customers see first: logos, banners and business portfolio websites that make a brand look trustworthy from the first click.</p>
+      <p>I have built several online stores, and every project starts with the same goal: a clean design, a smooth buying experience, and marketing that brings real customers.</p>
+    </div>
+
+    <aside class="services" aria-labelledby="svc-h">
+      <h3 id="svc-h">Our Services</h3>
+      <h4>E-Commerce Development</h4>
+      <ul><li>Shopify Management</li><li>Store Management</li><li>Local Drop Shipping</li><li>International Drop Shipping</li><li>B2B China Sourcing For All Our Countries</li></ul>
+      <h4>Products</h4>
+      <ul><li>Product Hunting</li><li>Product Sourcing</li></ul>
+      <h4>Marketing</h4>
+      <ul><li>Meta Marketing</li><li>TikTok Marketing</li></ul>
+      <h4>Design</h4>
+      <ul><li>Web Designing</li><li>Business Portfolio Websites</li><li>Logos and Banners Design for Websites</li></ul>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="#top">
+        <img src="jahan%20logo.jpeg" alt="Jahan Digital Group logo">
+        <span>Hammad Sohail</span>
+      </a>
+      <h2>Ready To Dominate Online? Let's Build a Digital Powerhouse For Your Business</h2>
+      <p>Send me a message and tell me what you want to build. I reply on WhatsApp and by email.</p>
+    </div>
+    <ul class="contact">
+      <li>
+        <a href="https://wa.me/923160827640?text=Hello%20Its%20Hammad%20ECOM%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <div><small>WhatsApp</small><span>03160827640</span></div>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:hammadsohail778@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <div><small>Email</small><span>hammadsohail778@gmail.com</span></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="foot-base">
+    <p> <span id="yr"></span> Hammad Sohail. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="panel" id="panel-logos" role="dialog" aria-modal="true" aria-labelledby="pl-h" hidden>
+  <div class="panel-bar">
+    <div class="wrap">
+      <button class="btn back" type="button">&larr; Back to website</button>
+      <span class="brand"><img src="jahan%20logo.jpeg" alt=""><span>ItsHammadEcom</span></span>
+    </div>
+  </div>
+  <div class="panel-head">
+    <div class="wrap">
+      <h2 id="pl-h">Logo gallery</h2>
+      <div class="rule" aria-hidden="true"></div>
+      <p><span data-count="logos"></span> logos made for stores and businesses. Click any logo to see it larger.</p>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="wrap"><div class="grid logos-grid" id="logoAll"></div></div>
+  </div>
+</div>
+
+<div class="panel" id="panel-banners" role="dialog" aria-modal="true" aria-labelledby="pb-h" hidden>
+  <div class="panel-bar">
+    <div class="wrap">
+      <button class="btn back" type="button">&larr; Back to website</button>
+      <span class="brand"><img src="jahan%20logo.jpeg" alt=""><span>ItsHammadEcom</span></span>
+    </div>
+  </div>
+  <div class="panel-head">
+    <div class="wrap">
+      <h2 id="pb-h">Banner gallery</h2>
+      <div class="rule" aria-hidden="true"></div>
+      <p><span data-count="banners"></span> banners made for store homepages. Click any banner to see it larger.</p>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="wrap"><div class="masonry" id="bannerAll"></div></div>
+  </div>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lb-x" type="button" aria-label="Close">&times;</button>
+  <button class="lb-p" type="button" aria-label="Previous">&lsaquo;</button>
+  <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-n" type="button" aria-label="Next">&rsaquo;</button>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+var LOGOS=[
+  {f:'logo (2).jpg',    t:''},
+  {f:'logo (2).png',    t:''},
+  {f:'logo (1).png',    t:''},
+  {f:'logo (3).jpg',    t:''},
+  {f:'logo (4).jpg',    t:''},
+  {f:'logo (5).jpg',    t:''},
+  {f:'logo (1).jpg',    t:''}
+];
+var BANNERS=[
+  {f:'banner (1).jpg',  t:''},
+  {f:'banner (1).png',  t:''},
+  {f:'banner (2).jpg',  t:''},
+  {f:'banner (3).jpg',  t:''},
+  {f:'banner (4).jpg',  t:''},
+  {f:'banner (5).jpg',  t:''},
+  {f:'banner (6).jpg',  t:''},
+  {f:'banner (7).jpg',  t:''},
+  {f:'banner (8).jpg',  t:''},
+  {f:'banner (9).jpg',  t:''},
+  {f:'banner (10).jpg', t:''},
+  {f:'banner (11).jpg', t:''},
+  {f:'banner (12).jpg', t:''},
+  {f:'banner (13).jpg', t:''},
+  {f:'banner (14).jpg', t:''}
+];
+var DATA={logos:LOGOS,banners:BANNERS};
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
+function tileHTML(key,i){
+  var it=DATA[key][i];
+  return '<figure class="item">'+
+    '<button type="button" class="tile" data-list="'+key+'" data-i="'+i+'" data-file="'+esc(it.f)+'" aria-label="Enlarge: '+esc(it.t)+'">'+
+      '<img src="'+encodeURI(it.f)+'" alt="'+esc(it.t)+'" loading="lazy" decoding="async">'+
+    '</button>'+
+    '<figcaption>'+esc(it.t)+'</figcaption>'+
+  '</figure>';
+}
+function fillGrid(id,key,count){
+  var el=document.getElementById(id); if(!el) return;
+  var n=Math.min(count,DATA[key].length), html='';
+  for(var i=0;i<n;i++) html+=tileHTML(key,i);
+  el.innerHTML=html;
+}
+fillGrid('logoPreview','logos',4);
+fillGrid('logoAll','logos',999);
+fillGrid('bannerPreview','banners',6);
+fillGrid('bannerAll','banners',999);
+Array.prototype.forEach.call(document.querySelectorAll('[data-count]'),function(el){
+  el.textContent=DATA[el.getAttribute('data-count')].length;
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+document.addEventListener('error',function(e){
+  var t=e.target;
+  if(t && t.tagName==='IMG'){
+    var host=t.closest('.tile, .store-mark');
+    if(host) host.classList.add('missing');
+  }
+},true);
+
+var NS='http://www.w3.org/2000/svg', W=2880;
+function svgEl(name,attrs){
+  var e=document.createElementNS(NS,name);
+  for(var k in attrs) e.setAttribute(k,attrs[k]);
+  return e;
+}
+function wavePath(y0,a,period,flip){
+  var half=period/2, d='M0 '+y0, s=flip?-1:1;
+  for(var x=0;x<W;x+=half){
+    d+=' Q'+(x+half/2)+' '+(y0-s*2*a).toFixed(1)+' '+(x+half)+' '+y0;
+    s=-s;
+  }
+  return d;
+}
+function drifter(H,dur,rev){
+  var s=svgEl('svg',{viewBox:'0 0 '+W+' '+H,preserveAspectRatio:'none','aria-hidden':'true',focusable:'false'});
+  s.setAttribute('class','drift');
+  s.style.animationDuration=dur+'s';
+  if(rev) s.style.animationDirection='reverse';
+  return s;
+}
+
+Array.prototype.forEach.call(document.querySelectorAll('.wave-edge'),function(el){
+  var H=200, frontFill=el.getAttribute('data-fill')||'#000';
+  var layers=[
+    {c:'var(--w3)',o:.60,y:.34,a:.17,p:720,f:0,dur:36,rev:0},
+    {c:'var(--w2)',o:.55,y:.45,a:.16,p:480,f:1,dur:25,rev:1},
+    {c:'var(--w1)',o:.65,y:.56,a:.15,p:360,f:0,dur:18,rev:0}
+  ];
+  layers.forEach(function(l){
+    var s=drifter(H,l.dur,l.rev);
+    var d=wavePath(H*l.y,H*l.a,l.p,l.f)+' L'+W+' '+H+' L0 '+H+' Z';
+    var p=svgEl('path',{d:d});
+    p.style.fill=l.c; p.style.fillOpacity=l.o;
+    s.appendChild(p); el.appendChild(s);
+  });
+  var s=drifter(H,42,1);
+  var line=wavePath(H*.70,H*.13,720,1);
+  var body=svgEl('path',{d:line+' L'+W+' '+H+' L0 '+H+' Z'});
+  body.style.fill=frontFill;
+  var crest=svgEl('path',{d:line,'vector-effect':'non-scaling-stroke'});
+  crest.style.fill='none'; crest.style.stroke='var(--w1)'; crest.style.strokeWidth='3';
+  s.appendChild(body); s.appendChild(crest); el.appendChild(s);
+});
+
+Array.prototype.forEach.call(document.querySelectorAll('.wave-lines'),function(el){
+  var n=parseInt(el.getAttribute('data-n'),10)||4, H=160;
+  var cols=['var(--w1)','var(--w2)','var(--w3)'], per=[720,480,360,1440];
+  for(var i=0;i<n;i++){
+    var s=drifter(H,46+i*11,i%2);
+    s.style.top=(4+i*(82/n))+'%';
+    var p=svgEl('path',{d:wavePath(H/2,16+i*4,per[i%4],i%2),'vector-effect':'non-scaling-stroke'});
+    p.style.fill='none'; p.style.stroke=cols[i%3]; p.style.strokeWidth='2'; p.style.opacity=(0.40-i*0.03).toFixed(2);
+    s.appendChild(p); el.appendChild(s);
+  }
+});
+
+if(reduce){
+  Array.prototype.forEach.call(document.querySelectorAll('animate'),function(a){a.parentNode.removeChild(a);});
+}
+
+var nav=document.getElementById('nav'), toggle=document.getElementById('navToggle');
+toggle.addEventListener('click',function(){
+  var open=nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded',open?'true':'false');
+});
+Array.prototype.forEach.call(document.querySelectorAll('.nav-links a'),function(a){
+  a.addEventListener('click',function(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');});
+});
+if('IntersectionObserver' in window){
+  var links={};
+  Array.prototype.forEach.call(document.querySelectorAll('.nav-links a'),function(a){links[a.getAttribute('href').slice(1)]=a;});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        for(var k in links) links[k].removeAttribute('aria-current');
+        var a=links[en.target.id]; if(a) a.setAttribute('aria-current','true');
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  Object.keys(links).forEach(function(id){var el=document.getElementById(id); if(el) io.observe(el);});
+}
+
+var openPanelKey=null, lbKey=null, lbIdx=0;
+var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'), lbCap=document.getElementById('lbCap');
+
+function syncLock(){document.body.classList.toggle('lock',!!openPanelKey||!lb.hidden);}
+
+function showPanel(key){
+  if(openPanelKey===key) return;
+  if(openPanelKey) hidePanel(openPanelKey,true);
+  var p=document.getElementById('panel-'+key); if(!p) return;
+  p.hidden=false; void p.offsetWidth; p.classList.add('open'); p.scrollTop=0;
+  openPanelKey=key; syncLock();
+  var b=p.querySelector('.back'); if(b) b.focus({preventScroll:true});
+}
+function hidePanel(key,instant){
+  var p=document.getElementById('panel-'+key); if(!p) return;
+  p.classList.remove('open');
+  var done=function(){p.hidden=true;};
+  if(instant||reduce) done(); else setTimeout(done,700);
+  if(openPanelKey===key) openPanelKey=null;
+  syncLock();
+}
+function requestOpen(key){
+  try{history.pushState({panel:key},'','#all-'+key);}catch(e){}
+  showPanel(key);
+}
+function requestClose(){
+  if(history.state && history.state.panel){history.back();}
+  else if(openPanelKey){hidePanel(openPanelKey);}
+}
+Array.prototype.forEach.call(document.querySelectorAll('[data-open]'),function(b){
+  b.addEventListener('click',function(){requestOpen(b.getAttribute('data-open'));});
+});
+Array.prototype.forEach.call(document.querySelectorAll('.panel .back'),function(b){
+  b.addEventListener('click',requestClose);
+});
+window.addEventListener('popstate',function(){
+  var st=history.state;
+  if(st && st.panel) showPanel(st.panel);
+  else if(openPanelKey) hidePanel(openPanelKey);
+});
+if(location.hash==='#all-logos') showPanel('logos');
+if(location.hash==='#all-banners') showPanel('banners');
+
+function renderLB(){
+  var it=DATA[lbKey][lbIdx];
+  lbImg.src=encodeURI(it.f); lbImg.alt=it.t; lbCap.textContent=it.t;
+}
+function openLB(key,i){
+  lbKey=key; lbIdx=i; renderLB(); lb.hidden=false; syncLock();
+  lb.querySelector('.lb-x').focus({preventScroll:true});
+}
+function closeLB(){lb.hidden=true; lbImg.src=''; syncLock();}
+function stepLB(d){
+  var n=DATA[lbKey].length; lbIdx=(lbIdx+d+n)%n; renderLB();
+}
+document.addEventListener('click',function(e){
+  var t=e.target.closest ? e.target.closest('.tile') : null;
+  if(t) openLB(t.getAttribute('data-list'),parseInt(t.getAttribute('data-i'),10));
+});
+lb.querySelector('.lb-x').addEventListener('click',closeLB);
+lb.querySelector('.lb-p').addEventListener('click',function(){stepLB(-1);});
+lb.querySelector('.lb-n').addEventListener('click',function(){stepLB(1);});
+lb.addEventListener('click',function(e){if(e.target===lb) closeLB();});
+document.addEventListener('keydown',function(e){
+  if(!lb.hidden){
+    if(e.key==='Escape') closeLB();
+    else if(e.key==='ArrowLeft') stepLB(-1);
+    else if(e.key==='ArrowRight') stepLB(1);
+  }else if(e.key==='Escape' && openPanelKey){
+    requestClose();
+  }
+});
+})();
+</script>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"1ed898404bece4db7b875084bfc50d21f","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/kommunicate-widget-3.0.min.js";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+
+
+</body>
+</html>    
+
+
+  </body>
+</html>
